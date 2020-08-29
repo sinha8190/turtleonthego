@@ -75,8 +75,8 @@ def drawshapes(choice):
         
 def circle(t, color):
     turtle.title("A Circle")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill()
     for count in range(360):
         t.forward(1)
@@ -85,8 +85,8 @@ def circle(t, color):
         
 def triangle(t, color):
     turtle.title("A Triangle")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill()
     for count in range(3):
         t.right(60)
@@ -96,8 +96,8 @@ def triangle(t, color):
     
 def square(t, color):
     turtle.title("A Square")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill()
     for count in range(4):
         t.forward(100)
@@ -106,8 +106,8 @@ def square(t, color):
     
 def rectangle(t,color):
     turtle.title("A Rectangle")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill()
     for count in range(2):
         t.forward(100)
@@ -118,8 +118,8 @@ def rectangle(t,color):
     
 def parallelogram(t, color):
     turtle.title("A Parallelogram")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill() 
     for count in range(2):    
         t.forward(100)
@@ -130,8 +130,8 @@ def parallelogram(t, color):
 
 def trapezoid(t, color):
     turtle.title("A Trapezoid")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     t.begin_fill()
     t.forward(100)
     t.right(60)
@@ -146,8 +146,8 @@ def trapezoid(t, color):
     
 def slinky(t, color):
     turtle.title("A Slinky")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     for count in range(10):
         for rounds in range(36):
             t.forward(10)
@@ -156,16 +156,16 @@ def slinky(t, color):
 
 def spiral(t, color):
     turtle.title("A Spiral")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     for count in range(100):
         t.forward(1+count)
         t.right(20)  
     
 def tancircles(t, color):
     turtle.title("Tangent Circles")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     for count in range(10):
         for rounds in range(360):
             t.forward(count+1)
@@ -235,8 +235,8 @@ def sparklingstar(t, color):
 
 def star(t, color):
     turtle.title("A Star")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     side = 200
     t.begin_fill()
     for count in range(5):
@@ -271,8 +271,8 @@ def decorcircle(t, color):
         
 def concentriccircles(t, color):
     turtle.title("Concentric Circles")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     for count in range(1,10):
         t.circle(10*count)
         t.penup()
@@ -281,8 +281,8 @@ def concentriccircles(t, color):
 
 def spiralsquare(t, color):
     turtle.title("A Spiral Square")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     side = 200
     for count in range(40):
         t.forward(side)
@@ -291,8 +291,8 @@ def spiralsquare(t, color):
 
 def spiralstar(t, color):
     turtle.title("A Spiral Star")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     side = 200
     for count in range(20):
         t.forward(side)
@@ -301,8 +301,8 @@ def spiralstar(t, color):
 
 def spiraltriangle(t, color):
     turtle.title("A Spiral Triangle")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     side = 200
     for count in range(20):
         t.forward(side)
@@ -311,8 +311,8 @@ def spiraltriangle(t, color):
         
 def spiralpentagon(t, color):
     turtle.title("A Spiral Triangle")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     side = 200
     for count in range(40):
         t.forward(side)
@@ -397,8 +397,8 @@ def snowman(t, color):
     t.end_fill()    
     
 def car(t, color):
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))
     #rectangular upper body    
     t.penup()
     t.goto(0,0)
@@ -524,8 +524,8 @@ def heart(t, color):
     
 def randomlines(t, color):
     turtle.title("I don't know what am I drawing !")
-    t.pencolor(color[random.randint(0, len(color)-1)])
-    t.fillcolor(color[random.randint(0, len(color)-1)])    
+    t.pencolor(random.choice(color))
+    t.fillcolor(random.choice(color))    
     end_time = datetime.now() + timedelta(seconds=10)
     while datetime.now() < end_time:
         t.forward(100)
